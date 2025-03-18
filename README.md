@@ -20,38 +20,6 @@ Responsive design for mobile and desktop access
 
 Installation & Setup
 
-Prerequisites
-
-Ensure you have the following installed:
-
-Node.js and npm (for backend and package management)
-
-MongoDB (for database management)
-
-Git (optional, for version control)
-
-Steps to Run the System
-
-Clone the Repository:
-
-git clone https://github.com/your-repository/task-monitoring-system.git
-cd task-monitoring-system
-
-Install Dependencies:
-
-npm install
-
-Start the Backend Server:
-
-npm start
-
-Start the Frontend (If Separate):
-
-cd frontend
-npm install
-npm start
-
-The system should now be accessible at http://localhost:3000/ (or the configured port).
 
 Folder Structure
 
