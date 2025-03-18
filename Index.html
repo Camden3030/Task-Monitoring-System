@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Monitoring System</title>
+    <link rel="stylesheet" href="TaskSystem.css">
+</head>
+<body>
+    <header>
+        <h1>Task Monitoring System</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tasks</a>
+            <a href="#">Reports</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="dashboard">
+            <h2>Task Dashboard</h2>
+            <ul>
+                <li class="task-item">
+                    <span class="task-title">Design UI Mockups</span>
+                    <span class="task-status">In Progress</span>
+                    <span class="task-due">Due: 2025-03-20</span>
+                </li>
+                <li class="task-item">
+                    <span class="task-title">Write Documentation</span>
+                    <span class="task-status">Not Started</span>
+                    <span class="task-due">Due: 2025-03-25</span>
+                </li>
+                <li class="task-item">
+                    <span class="task-title">Implement API</span>
+                    <span class="task-status">Completed</span>
+                    <span class="task-due">Due: 2025-03-15</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="task-form">
+            <h2>Create New Task</h2>
+            <form>
+                <label for="taskTitle">Task Title:</label>
+                <input type="text" id="taskTitle" name="taskTitle" required>
+
+                <label for="taskStatus">Status:</label>
+                <select id="taskStatus" name="taskStatus">
+                    <option value="not-started">Not Started</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <label for="taskDue">Due Date:</label>
+                <input type="date" id="taskDue" name="taskDue" required>
+
+                <button type="submit">Create Task</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Task Monitoring System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
