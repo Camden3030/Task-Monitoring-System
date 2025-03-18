@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Task</title>
+    <link rel="stylesheet" href="TaskSystem.css">
+</head>
+<body>
+    <header>
+        <h1>Add a New Task</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="tasks.html">Tasks</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="task-form">
+            <h2>Task Details</h2>
+            <form id="taskForm">
+                <label for="taskTitle">Task Title:</label>
+                <input type="text" id="taskTitle" name="taskTitle" required>
+
+                <label for="taskStatus">Status:</label>
+                <select id="taskStatus" name="taskStatus">
+                    <option value="not-started">Not Started</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <label for="taskDue">Due Date:</label>
+                <input type="date" id="taskDue" name="taskDue" required>
+
+                <button type="submit">Create Task</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Task Monitoring System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
